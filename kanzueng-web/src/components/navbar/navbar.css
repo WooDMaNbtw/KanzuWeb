@@ -1,0 +1,51 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9); /* Цвет с прозрачностью */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-text {
+    text-decoration: none;
+    color: #000000; /* цвет текста */
+    /*color: #fff; !* цвет текста *!*/
+    font-weight: 500;
+    font-size: 24px; /* увеличиваем размер шрифта */
+}
+
+.nav-link:hover {
+    /* Цвет текста при наведении */
+    color: #666;
+}
+
+.nav-item-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-item-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 100%;
+}

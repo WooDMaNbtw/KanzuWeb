@@ -1,0 +1,53 @@
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-what-we-do h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый цвет фона */
+    border-radius: 20px;
+    position: relative;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+.overlay-what-we-do h2:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.overlay-what-we-do h2:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.overlay-what-we-do h2:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.overlay-what-we-do h2:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.overlay-what-we-do h2:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.overlay-what-we-do h2:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0) translateY(0px);
+    }
+}
