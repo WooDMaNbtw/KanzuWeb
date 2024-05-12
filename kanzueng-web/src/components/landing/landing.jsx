@@ -1,71 +1,11 @@
-// import React, { useState, useEffect } from 'react';
 import './landing.css'; // Подключаем стили
-import CarouselBox from "./CarouselBox"
 import Kanzu from "../../assets/Kanzu1.png"
-import "./landingWhatWeDo.css"
+import LandingWWD from "./whatwedo/landingWWD";
 
 const Landing = () => {
     return (
         <div>
-            {/*<CarouselBox/>*/}
-            <section id="what-we-do" className="section">
-                <div className="content">
-                    <div className="image-container">
-                        <img src={Kanzu} alt="What We Do"/>
-                        <div className="overlay overlay-what-we-do">
-                            <h1 style={{fontSize: "30px"}}>What We Do</h1>
-                            <div className="overlay-what-we-do">
-                                <h2 className="move-wwd-1">automation</h2>
-                                <h2 className="move-wwd-2">website</h2>
-                                <div className="move-wwd-block-1">
-                                    <h2 className="move-wwd-3">Experience</h2>
-                                    <h2 className="move-wwd-4">chat-bot</h2>
-                                    <h2 className="move-wwd-5">magic</h2>
-                                </div>
-                                <h2 className="move-wwd-6">parsing</h2>
-                                <h2 className="move-wwd-7">app</h2>
-                            </div>
-                            <table style={{marginTop: "60px",}}>
-                                <tr>
-                                    <td>
-                                        <div style={{
-                                            marginRight: "150px",
-                                            width: "350px",
-                                            height: "70px",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            border: "2px solid #000000",
-                                            boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
-                                            borderRadius: "5px"
-                                        }}>At Kanzu we develop job-perfect IT projects that meet both the needs and the eye</div>
-                                    </td>
-                                    <td>
-                                        <a href="#contact" style={{textDecoration: "none", color: "white"}} type="button">
-                                            <div>
-                                                <div style={{
-                                                    marginLeft: "150px",
-                                                    width: "160px",
-                                                    height: "45px",
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    fontSize: "22px",
-                                                    justifyContent: 'center',
-                                                    border: "2px solid #000000",
-                                                    boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
-                                                    borderRadius: "5px",
-                                                    backgroundColor: "black",
-                                                }}>
-                                                    Start project
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            </div>
-                        </div>
-                    </div>
-            </section>
+            <LandingWWD/>
 
             <section id="portfolio" className="section">
                 <div className="content">

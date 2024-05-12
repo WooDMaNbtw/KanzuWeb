@@ -9,12 +9,22 @@ const NavBar = () => {
                     <ul className="navbar-nav">
                         <div className="nav-item-left">
                             <li className="nav-item">
-                                <a href="#what-we-do" className="nav-link" style={{background: "transparent"}}>
+                                <a href="#what-we-do" className="nav-link"
+                                   style={{
+                                       background: "transparent",
+                                       textDecoration: "none",
+                                       marginRight: "25px",
+                                       marginLeft: "25px"
+                                }}>
                                     <span className="nav-text">What We Do</span>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="#portfolio" className="nav-link" style={{background: "transparent"}}>
+                                <a href="#portfolio" className="nav-link"
+                                   style={{
+                                       background: "transparent",
+                                       textDecoration: "none",
+                                   }}>
                                     <span className="nav-text">Portfolio</span>
                                 </a>
                             </li>
@@ -26,12 +36,22 @@ const NavBar = () => {
                         </li>
                         <div className="nav-item-right">
                             <li className="nav-item">
-                                <a href="#feedback" className="nav-link" style={{background: "transparent"}}>
+                                <a href="#feedback" className="nav-link"
+                                   style={{
+                                       background: "transparent",
+                                       textDecoration: "none",
+                                   }}>
                                     <span className="nav-text">Feedback</span>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="#contact" className="nav-link" style={{background: "transparent"}}>
+                                <a href="#contact" className="nav-link"
+                                   style={{
+                                       background: "transparent",
+                                       textDecoration: "none",
+                                       marginRight: "25px",
+                                       marginLeft: "25px"
+                                   }}>
                                     <span className="nav-text">Contact</span>
                                 </a>
                             </li>
