@@ -3,9 +3,9 @@ import './navbar.css'; // Стили для NavBar
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg" style={{position: "fixed"}}>
-            <div className="container">
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <nav className="navbar navbar-expand-lg" style={{position: "fixed", height: '80px', justifyContent: "center", alignItems: "center"}}>
+            <div className="container" style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center", width: '100%'}}>
+                <div className="collapse navbar-collapse justify-content-center" id="navbarNav" style={{display: "flex", width: '100%', justifyContent: "center"}}>
                     <ul className="navbar-nav">
                         <div className="nav-item-left">
                             <li className="nav-item">
@@ -13,8 +13,8 @@ const NavBar = () => {
                                    style={{
                                        background: "transparent",
                                        textDecoration: "none",
-                                       marginRight: "25px",
-                                       marginLeft: "25px"
+                                       // marginRight: "25px",
+                                       // marginLeft: "25px"
                                 }}>
                                     <span className="nav-text">What We Do</span>
                                 </a>
@@ -29,9 +29,9 @@ const NavBar = () => {
                                 </a>
                             </li>
                         </div>
-                        <li className="nav-item">
+                        <li className="nav-item" style={{justifyContent: "center"}}>
                             <div className="nav-link center-link">
-                                <span className="nav-text" style={{fontSize: "30px"}}>Kanzu</span>
+                                <span className="nav-text" style={{fontSize: "65px", fontWeight: 350}}>Kanzu</span>
                             </div>
                         </li>
                         <div className="nav-item-right">
@@ -49,8 +49,8 @@ const NavBar = () => {
                                    style={{
                                        background: "transparent",
                                        textDecoration: "none",
-                                       marginRight: "25px",
-                                       marginLeft: "25px"
+                                       // marginRight: "25px",
+                                       // marginLeft: "25px"
                                    }}>
                                     <span className="nav-text">Contact</span>
                                 </a>
