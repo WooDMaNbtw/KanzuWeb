@@ -1,11 +1,11 @@
 import './landing.css'; // Подключаем стили
 import Kanzu from "../../assets/Kanzu1.png"
-import LandingWWD from "./whatwedo/landingWWD";
+import LandingFirstPage from "./whatwedo/landingFirstPage";
 
 const Landing = () => {
     return (
         <div>
-            <LandingWWD/>
+            <LandingFirstPage/>
 
             <section id="portfolio" className="section">
                 <div className="content">
