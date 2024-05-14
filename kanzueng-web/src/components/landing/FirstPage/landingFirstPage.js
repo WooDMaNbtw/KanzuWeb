@@ -75,12 +75,6 @@ const LandingFirstPage = () => {
                     </div>
                 </div>
             </section>
-            <section style={{display: 'flex', justifyContent: 'center'}}>
-                <div className="content">
-                    <img src={circle} alt="What We Do" style={{width: 1920, height: 1080}}/>
-                </div>
-            </section>
-
         </>
     )
 }
