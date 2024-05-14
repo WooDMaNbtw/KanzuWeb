@@ -1,0 +1,200 @@
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-first-page h2 {
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Прозрачный белый цвет фона */
+    border-radius: 20px;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    bottom: -50px;
+}
+
+.overlay-first-page h2:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.overlay-first-page h2:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.overlay-first-page h2:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.overlay-first-page h2:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.overlay-first-page h2:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.overlay-first-page h2:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+.overlay-first-page .move-fp-1 {
+    font-size: 112px;
+    animation: fadeInUp1 1s ease forwards;
+}
+
+
+@keyframes fadeInUp1 {
+    from {
+        opacity: 0;
+        color: black;
+        transform: translate(0%, -50%) translateY(-110px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to bottom, black 30%, white 90%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateY(-30px);
+    }
+}
+
+.overlay-first-page .move-fp-2 {
+    font-size: 112px;
+    left: -50px;
+    animation: fadeInUp2 1s ease forwards;
+}
+
+
+
+@keyframes fadeInUp2 {
+    from {
+        opacity: 0;
+        color: #000;
+        transform: translate(-50%, 0) translateX(-250px) translateY(-110px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to bottom, black 0%, black 50%, white 80%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-50px) translateY(-110px);
+    }
+}
+
+.move-fp-block-1 {
+    width: 100%;
+}
+
+.move-fp-block-1 h2 {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.overlay-first-page .move-fp-3 {
+    animation: fadeInUp3 1s ease forwards;
+}
+
+@keyframes fadeInUp3 {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) translateX(-400px) translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to bottom, #575757 0%, #575757 50%, #575757 100%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-200px) translateY(-150px);
+    }
+}
+
+.overlay-first-page .move-fp-4 {
+    animation: fadeInUp4 1s ease forwards;
+    font-weight: 500;
+}
+
+@keyframes fadeInUp4 {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) translateX(-220px) translateY(350px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to bottom, black 0%, black 50%, #000000 100%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-220px) translateY(-150px);
+    }
+}
+
+.overlay-first-page .move-fp-5 {
+    animation: fadeInUp5 1s ease forwards;
+}
+
+@keyframes fadeInUp5 {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) translateX(300px) translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to bottom, #575757 0%, #575757 50%, #575757 100%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-240px) translateY(-150px);
+    }
+}
+
+.overlay-first-page .move-fp-6 {
+    animation: fadeInUp6 1s ease forwards;
+    font-size: 112px;
+    z-index: -1;
+}
+
+@keyframes fadeInUp6 {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) translateX(-400px) translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to top, black 0%, black 30%, white 65%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-100px) translateY(-200px);
+    }
+}
+
+.overlay-first-page .move-fp-7 {
+    animation: fadeInUp7 1s ease forwards;
+    font-size: 112px;
+    z-index: -2;
+}
+
+@keyframes fadeInUp7 {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) translateX(-200px) translateY(480px);
+    }
+    to {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(to top, black 20%, white 80%); /* Градиент от черного к белому */
+        -webkit-background-clip: text; /* Применяем градиент к тексту */
+        background-clip: text;
+        transform: translate(0, 0) translateX(-200px) translateY(-270px);
+    }
+}
