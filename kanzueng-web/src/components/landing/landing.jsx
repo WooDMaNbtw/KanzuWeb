@@ -1,6 +1,6 @@
 import './landing.css'; // Подключаем стили
 import Kanzu from "../../assets/Kanzu1.png"
-import LandingFirstPage from "./whatwedo/landingFirstPage";
+import LandingFirstPage from "./FirstPage/landingFirstPage";
 
 const Landing = () => {
     return (
