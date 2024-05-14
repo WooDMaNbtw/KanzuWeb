@@ -1,26 +1,25 @@
 import Kanzu from "../../../assets/Kanzu1.png";
-import "./landingWhatWeDo.css"
+import "./landingFirstPage.css"
 import circle from "../../../assets/img_1.png"
-const LandingWWD = () => {
+const LandingFirstPage = () => {
     return (
         <>
-            <section id="what-we-do" className="section">
+            <section className="section">
                 <div className="content">
                     <div className="image-container">
-                        <img src={Kanzu} alt="What We Do"/>
-                        <div className="overlay overlay-what-we-do" style={{width: '80%', background: "transparent"}}>
-                            {/*<h1 style={{fontSize: "30px"}}>What We Do</h1>*/}
-                            <div className="overlay-what-we-do"
+                        <img src={Kanzu} alt="nature page"/>
+                        <div className="overlay overlay-first-page" style={{width: '80%', background: "transparent"}}>
+                            <div className="overlay-first-page"
                                  style={{width: "100%", height: '600px', marginTop: '-150px', marginLeft: '100px'}}>
-                                <h2 className="move-wwd-1">automation</h2>
-                                <h2 className="move-wwd-2" style={{background: "transparent"}}><span>website</span></h2>
-                                <div className="move-wwd-block-1">
-                                    <h2 className="move-wwd-3">Experience</h2>
-                                    <h2 className="move-wwd-4">chat-bot</h2>
-                                    <h2 className="move-wwd-5">magic</h2>
+                                <h2 className="move-fp-1">automation</h2>
+                                <h2 className="move-fp-2" style={{background: "transparent"}}><span>website</span></h2>
+                                <div className="move-fp-block-1">
+                                    <h2 className="move-fp-3">Experience</h2>
+                                    <h2 className="move-fp-4">chat-bot</h2>
+                                    <h2 className="move-fp-5">magic</h2>
                                 </div>
-                                <h2 className="move-wwd-6">parsing</h2>
-                                <h2 className="move-wwd-7">app</h2>
+                                <h2 className="move-fp-6">parsing</h2>
+                                <h2 className="move-fp-7">app</h2>
                             </div>
                             <table style={{width: '100%', marginTop: "0px", justifyContent: "center"}}>
                                 <tr>
@@ -86,4 +85,4 @@ const LandingWWD = () => {
     )
 }
 
-export default LandingWWD
+export default LandingFirstPage
