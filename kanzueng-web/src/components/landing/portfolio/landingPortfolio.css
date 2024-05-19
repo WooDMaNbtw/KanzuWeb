@@ -7,13 +7,22 @@
 }
 
 .portfolio {
-    margin-top: 20px;
+    margin-top: 0px;
     display: block;
     width: 100%;
     height: 900px;
     justify-content: center;
     align-items: center;
 }
+
+/*.portfolio::before {*/
+/*    content: '';*/
+/*    z-index: -1;*/
+/*    background-image: url('../../../assets/photorealistic-view-of-tree-in-nature-with-branches-and-trunk.jpg');*/
+/*    background-size: cover; !* Размер изображения *!*/
+/*    filter: blur(100px);*/
+/*    overflow: hidden;*/
+/*}*/
 
 .portfolio .content {
     width: 100%;
@@ -24,6 +33,7 @@
 
 .portfolio .content .cards-container{
     width: 100%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +94,7 @@
 
 .card .text h3 {
     font-size: 25px;
-    margin: 5px 0 0;
+    margin: 10px 0 0;
     opacity: 0;
 }
 
