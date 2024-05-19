@@ -1,0 +1,151 @@
+.contact {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    border-top: 2px dashed #333;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+.contact .content {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    justify-content: center;
+}
+
+.contact .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    width: 70%;
+}
+
+.contact .content .contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .content .contact-info .contact-info-icon {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.contact .content .contact-info .contact-info-icon img {
+    max-width: 100%;
+    height: fit-content;
+    border-radius: 50%;
+}
+
+
+.contact .content .message {
+    position: relative; /* Добавляем относительное позиционирование, чтобы псевдоэлемент был позиционирован относительно этого блока */
+    display: block;
+    width: 55%;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    text-align: left;
+    padding-inline: 20px;
+}
+
+.contact .content .message::after {
+    content: "";
+    position: absolute;
+    bottom: 30px; /* Сдвигаем треугольник вверх, чтобы он был виден */
+    left: -75px; /* Оставляем треугольник слева */
+    border: 25px solid transparent;
+    border-right: 50px solid #919191;
+    z-index: -1;
+}
+
+.contact .content .message::before {
+    content: "";
+    position: absolute;
+    bottom: 30px; /* Сдвигаем треугольник вверх, чтобы он был виден */
+    left: -73px; /* Оставляем треугольник слева */
+    border: 25px solid transparent;
+    border-right: 50px solid #ffffff;
+    z-index: 0;
+}
+
+.contact .content .message p {
+    font-size: 35px;
+    color: #3D3B49;
+}
+
+.contact .content .message .ceo-aftername {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact .content .contact-details {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .content .contact-details div {
+    display: block;
+    width: 100%;
+    border: 2px solid #919191;
+    border-radius: 8px;
+    text-align: left;
+    padding-inline: 10px;
+    font-size: 20px;
+}
+
+.contact .content .contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact .content .contact-details a {
+    text-decoration: none;
+    color: #45414D;
+    font-weight: 600;
+}
+
+.contact .content .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content .buttons div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .content button {
+    height: 60px;
+    width: 50%;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contact .content .brief-button {
+    background-color: #6e5976;
+    color: white;
+}
+
+.contact .content .contact-button {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.contact .content button:hover {
+    opacity: 0.8;
+}
