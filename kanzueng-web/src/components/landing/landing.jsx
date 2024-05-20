@@ -2,13 +2,14 @@ import './landing.css'; // Подключаем стили
 import LandingFirstPage from "./FirstPage/landingFirstPage";
 import LandingWhatWeDo from "./WhatWeDo/landingWWD";
 import LandingPortfolio from "./portfolio/landingPortfolio";
-
+import LandingContact from "./Contact/landingContact";
 const Landing = () => {
     return (
         <div>
             <LandingFirstPage/>
             {/*<LandingWhatWeDo/>*/}
             <LandingPortfolio/>
+            <LandingContact/>
 
             {/*<section id="portfolio" className="section">*/}
             {/*    <div className="content">*/}
@@ -36,18 +37,7 @@ const Landing = () => {
             {/*    </div>*/}
             {/*</section>*/}
 
-            {/*<section id="contact" className="section">*/}
-            {/*    <div className="content">*/}
-            {/*        <div className="image-container">*/}
-            {/*            <img src={Kanzu} alt="Contact"/>*/}
-            {/*            <div className="overlay">*/}
-            {/*                <h2>Contact</h2>*/}
-            {/*                <p>Maecenas consequat, odio ac malesuada pharetra, justo risus dignissim justo, ut*/}
-            {/*                    vestibulum magna lacus id justo.</p>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
+
 
             {/*<div className="landing-content">*/}
             {/*    /!* Первая картинка *!/*/}
