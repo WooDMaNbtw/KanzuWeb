@@ -1,6 +1,5 @@
 import "./landingContact.css"
-import Kanzu from "../../../assets/Kanzu1.png"
-import img from "../../../assets/1714982237089.jpeg"
+import img from "../../../assets/ceo_photo.jpeg"
 
 const LandingContact = () => {
     return (
@@ -36,6 +35,12 @@ const LandingContact = () => {
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="footer">
+                <div>
+                    <div className="policy"><a href="#">Privacy policy</a></div>
+                    <div className="year"><span>Kanzu | 2024</span></div>
                 </div>
             </div>
         </section>
