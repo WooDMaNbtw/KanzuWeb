@@ -1,0 +1,263 @@
+.naming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.portfolio {
+    margin-top: 0px;
+    display: block;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.portfolio::before {*/
+/*    content: '';*/
+/*    z-index: -1;*/
+/*    background-image: url('../../../assets/photorealistic-view-of-tree-in-nature-with-branches-and-trunk.jpg');*/
+/*    background-size: cover; !* Размер изображения *!*/
+/*    filter: blur(100px);*/
+/*    overflow: hidden;*/
+/*}*/
+
+.portfolio .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .content .cards-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: inline-block;
+    width: 80px; /* Ширина карточек по умолчанию */
+    height: 100%; /* Высота карточек по умолчанию */
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: solid 5px #000000;
+    border-radius: 10px;
+}
+
+.card .img-block {
+    width: 100%;
+    height: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card.active {
+    width: 600px; /* Увеличиваем ширину активной карточки */
+    height: 100%; /* Увеличиваем высоту активной карточки */
+}
+
+.card.inactive img{
+    filter: blur(0.5px);
+    /*display: none;*/
+    height: 100%;
+}
+
+/*.card.inactive {*/
+/*    background: #000000;*/
+/*}*/
+
+.card.half-active {
+    width: 350px;
+    height: 100%;
+}
+
+
+.card .text {
+    display: block;
+    margin: 0;
+    padding-inline: 10px;
+    height: 150px;
+}
+
+.card .text h3 {
+    font-size: 25px;
+    margin: 10px 0 0;
+    opacity: 0;
+}
+
+.card .text h4 {
+    font-size: 20px;
+    margin: 5px 0 0;
+}
+
+.card .text p {
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+.prev-button,
+.next-button {
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #ffffff;
+}
+
+.prev-button:disabled{
+}
+
+.next-button {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-button:disabled {
+    background-color: #ccc; /* Grey out the button when disabled */
+    cursor: not-allowed;
+}
+
+.next-button:hover:not(:disabled) {
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+}
+
+.next-button img {
+    vertical-align: middle; /* Align the arrow image vertically */
+    margin-left: 10px; /* Add some space between the text and the image */
+}
+
+.nav-button {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.card.inactive .overlay-text,
+.card.half-active .overlay-text {
+    display: none;
+}
+
+
+.card.active .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    color: white; /* Цвет текста */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.card.active .img-block img {
+    display: block;
+}
+
+.card.active .overlay p, .overlay h2 {
+    margin: 0;
+}
+
+.card.active .overlay-text h3 {
+    display: flex;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: transparent;
+
+    animation: fadeInUpTechs 1s ease forwards;
+}
+
+@keyframes fadeInUpTechs {
+    from {
+        opacity: 0;
+        margin-right: 20px;
+    }
+    to {
+        opacity: 1;
+        margin-right: 10px;
+    }
+}
+
+.card.inactive .text div {
+    display: none;
+}
+
+.card.half-active .text div p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card.active .text div p,
+.card.half-active .text div p{
+    animation: TextAnimationP 4s ease forwards;
+}
+
+.card.active .text div h4,
+.card.half-active .text div h4,
+.card.active .text div h3,
+.card.half-active .text div h3{
+    animation: TextAnimationH4 2s ease forwards;
+}
+
+@keyframes TextAnimationH4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes TextAnimationP {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

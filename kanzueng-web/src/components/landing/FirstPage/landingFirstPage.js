@@ -1,13 +1,12 @@
-import Kanzu from "../../../assets/Kanzu1.png";
+import backgroundNature from "../../../assets/background-hd.jpg";
 import "./landingFirstPage.css"
-import circle from "../../../assets/img_1.png"
 const LandingFirstPage = () => {
     return (
         <>
-            <section className="section">
+            <section className="section section--landing">
                 <div className="content">
                     <div className="image-container">
-                        <img src={Kanzu} alt="nature page"/>
+                        <img src={backgroundNature} alt="nature page"/>
                         <div className="overlay overlay-first-page" style={{width: '80%', background: "transparent"}}>
                             <div className="overlay-first-page"
                                  style={{width: "100%", height: '600px', marginTop: '-150px', marginLeft: '100px'}}>
@@ -30,14 +29,12 @@ const LandingFirstPage = () => {
                                             height: "100px",
                                             alignItems: "center",
                                             display: "flex",
+                                            color: "white"
                                         }}><span
                                             style={{
                                                 width: '450px',
                                                 justifyContent: "center",
                                                 alignItems: "center",
-                                                // border: "3px solid #000000",
-                                                // boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
-                                                // borderRadius: "8px",
                                                 fontSize: '27px'
                                             }}>At Kanzu we develop job-perfect IT projects that meet both the needs and the eye</span>
                                         </div>
