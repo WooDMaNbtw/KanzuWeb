@@ -1,9 +1,11 @@
 import React from 'react';
 import './navbar.css'; // Стили для NavBar
+import Logo from "../../assets/logo.png"
+
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg" style={{position: "fixed", height: '80px', justifyContent: "center", alignItems: "center"}}>
+        <nav className="navbar navbar-expand-lg" style={{position: "fixed", height: '60px', justifyContent: "center", alignItems: "center"}}>
             <div className="container" style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center", width: '100%'}}>
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav" style={{display: "flex", width: '100%', justifyContent: "center"}}>
                     <ul className="navbar-nav">
@@ -16,7 +18,7 @@ const NavBar = () => {
                                        // marginRight: "25px",
                                        // marginLeft: "25px"
                                 }}>
-                                    <span className="nav-text">What We Do</span>
+                                    <span className="nav-text">what we do</span>
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -25,14 +27,14 @@ const NavBar = () => {
                                        background: "transparent",
                                        textDecoration: "none",
                                    }}>
-                                    <span className="nav-text">Portfolio</span>
+                                    <span className="nav-text">portfolio</span>
                                 </a>
                             </li>
                         </div>
                         <li className="nav-item" style={{justifyContent: "center"}}>
-                            <div className="nav-link center-link">
-                                <span className="nav-text" style={{fontSize: "65px", fontWeight: 350}}>Kanzu</span>
-                            </div>
+                            <a href="#" className="nav-link center-link" style={{background: "transparent", cursor: "pointer", textDecoration: "none"}}>
+                                <img src={Logo} alt="logo" style={{maxWidth: "150px", }}/>
+                            </a>
                         </li>
                         <div className="nav-item-right">
                             <li className="nav-item">
@@ -41,7 +43,7 @@ const NavBar = () => {
                                        background: "transparent",
                                        textDecoration: "none",
                                    }}>
-                                    <span className="nav-text">Feedback</span>
+                                    <span className="nav-text">feedback</span>
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -52,7 +54,7 @@ const NavBar = () => {
                                        // marginRight: "25px",
                                        // marginLeft: "25px"
                                    }}>
-                                    <span className="nav-text">Contact</span>
+                                    <span className="nav-text">contact</span>
                                 </a>
                             </li>
                         </div>
