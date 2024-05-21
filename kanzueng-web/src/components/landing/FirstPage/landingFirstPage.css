@@ -200,6 +200,7 @@
 
 .overlay-first-page .move-fp-7 {
     animation: fadeInUp7 1s ease forwards;
+    animation-delay: 0s, 23s;
     font-size: 112px;
     z-index: -2;
     margin-top: -80px;
@@ -218,4 +219,21 @@
         background-clip: text;
         transform: translate(0, 0) translateX(-210px) translateY(0px);
     }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.section--landing .overlay-first-page .move-down {
+    color: red;
+    /*animation: moveDown 2s infinite;*/
 }

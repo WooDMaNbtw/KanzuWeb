@@ -1,6 +1,30 @@
 import backgroundNature from "../../../assets/background-hd.jpg";
 import "./landingFirstPage.css"
+import {useEffect, useRef} from "react";
+
+
 const LandingFirstPage = () => {
+    const elementsRef = useRef([]);
+
+    useEffect(() => {
+        elementsRef.current.forEach((element) => {
+            if (element && !element.classList.contains('move-down')) {
+                setTimeout(() => {
+                    element.classList.add('move-down');
+
+                    // // Удаление всех классов, которые начинаются с 'move-fp'
+                    // element.classList.forEach(className => {
+                    //     if (className.startsWith('move-fp')) {
+                    //         element.classList.remove(className);
+                    //     }
+                    // });
+
+                }, 3000); // Задержка перед началом анимации moveDown
+            }
+        });
+    }, []);
+
+
     return (
         <>
             <section className="section section--landing">
@@ -10,15 +34,15 @@ const LandingFirstPage = () => {
                         <div className="overlay overlay-first-page" style={{width: '80%', background: "transparent"}}>
                             <div className="overlay-first-page"
                                  style={{width: "100%", height: '600px', marginTop: '-150px', marginLeft: '100px'}}>
-                                <h2 className="move-fp-1">automation</h2>
-                                <h2 className="move-fp-2" style={{background: "transparent"}}><span>website</span></h2>
+                                <h2 ref={(el) => (elementsRef.current[0] = el)} className="move-fp-1">automation</h2>
+                                <h2 ref={(el) => (elementsRef.current[1] = el)} className="move-fp-2" style={{background: "transparent"}}><span>website</span></h2>
                                 <div className="move-fp-block-1">
                                     <h2 className="move-fp-3">Experience</h2>
-                                    <h2 className="move-fp-4">chat-bot</h2>
+                                    <h2 ref={(el) => (elementsRef.current[2] = el)} className="move-fp-4">chat-bot</h2>
                                     <h2 className="move-fp-5">magic</h2>
                                 </div>
-                                <h2 className="move-fp-6">parsing</h2>
-                                <h2 className="move-fp-7">app</h2>
+                                <h2 ref={(el) => (elementsRef.current[3] = el)} className="move-fp-6">parsing</h2>
+                                <h2 ref={(el) => (elementsRef.current[4] = el)} className="move-fp-7">app</h2>
                             </div>
                             <table style={{width: '100%', marginTop: "0px", justifyContent: "center"}}>
                                 <tr>
