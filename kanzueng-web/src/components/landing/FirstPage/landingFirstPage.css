@@ -219,3 +219,7 @@
         transform: translate(0, 0) translateX(-210px) translateY(0px);
     }
 }
+
+.start-project-btn:hover {
+    transform: scale(1.05);
+}
