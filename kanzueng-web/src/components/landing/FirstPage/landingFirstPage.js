@@ -47,18 +47,19 @@ const LandingFirstPage = () => {
                                             alignItems: "center",
                                             height: "100%"
                                         }}>
-                                            <a href="#contact" style={{
+                                            <a href="#contact" className="start-project-btn" style={{
                                                 textDecoration: "none", color: "white",
                                                 width: "300px",
                                                 height: "70px",
                                                 display: "flex",
                                                 alignItems: "center",
-                                                fontSize: "26px",
+                                                fontSize: "30px",
                                                 justifyContent: 'center',
-                                                border: "2px solid #000000",
+                                                border: "1px solid #fff",
                                                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
-                                                borderRadius: "5px",
-                                                backgroundColor: "black",
+                                                borderRadius: "10px",
+                                                backgroundColor: "#5CA040",
+                                                transition: ".5s ease"
                                             }} type="button">
                                                 <span style={{fontWeight: 600}}>
                                                     Start a project
