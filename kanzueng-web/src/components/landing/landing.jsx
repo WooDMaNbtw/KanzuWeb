@@ -3,11 +3,13 @@ import LandingFirstPage from "./FirstPage/landingFirstPage";
 import LandingWhatWeDo from "./WhatWeDo/landingWWD";
 import LandingPortfolio from "./portfolio/landingPortfolio";
 import LandingContact from "./Contact/landingContact";
+import TeamTechWWD from "./TeamTechWWD/TeamTechWWD";
 const Landing = () => {
     return (
         <div>
             <LandingFirstPage/>
             {/*<LandingWhatWeDo/>*/}
+            <TeamTechWWD/>
             <LandingPortfolio/>
             <LandingContact/>
 
