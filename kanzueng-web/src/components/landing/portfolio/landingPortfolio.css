@@ -15,14 +15,6 @@
     align-items: center;
 }
 
-/*.portfolio::before {*/
-/*    content: '';*/
-/*    z-index: -1;*/
-/*    background-image: url('../../../assets/photorealistic-view-of-tree-in-nature-with-branches-and-trunk.jpg');*/
-/*    background-size: cover; !* Размер изображения *!*/
-/*    filter: blur(100px);*/
-/*    overflow: hidden;*/
-/*}*/
 
 .portfolio .content {
     width: 100%;
