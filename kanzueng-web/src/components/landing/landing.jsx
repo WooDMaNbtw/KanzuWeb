@@ -4,11 +4,13 @@ import LandingWhatWeDo from "./WhatWeDo/landingWWD";
 import LandingPortfolio from "./portfolio/landingPortfolio";
 import LandingContact from "./Contact/landingContact";
 import TeamTechWWD from "./TeamTechWWD/TeamTechWWD";
+
+
 const Landing = () => {
     return (
         <div>
             <LandingFirstPage/>
-            {/*<LandingWhatWeDo/>*/}
+            <LandingWhatWeDo/>
             <TeamTechWWD/>
             <LandingPortfolio/>
             <LandingContact/>

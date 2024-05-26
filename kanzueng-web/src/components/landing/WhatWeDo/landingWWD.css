@@ -1,0 +1,127 @@
+.section--wwd {
+    display: block;
+    justify-content: center;
+    height: 900px;
+    margin: auto;
+}
+
+.section--wwd .wwd-header {
+    display: flex;
+    justify-content: center;
+    font-size: 72px;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+.section--wwd .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    margin-top: 0px;
+}
+
+.section--wwd .content .left-panel,
+.section--wwd .content .right-panel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section--wwd .content .left-panel .top-panel .develop-button {
+    transform: rotate(5deg) translateY(10px);
+}
+
+.section--wwd .content .left-panel .bottom-panel .develop-button {
+    transform: rotate(-5deg) translateY(10px);
+}
+
+.section--wwd .content .right-panel .bottom-panel .develop-button {
+    transform: rotate(-5deg) translateY(10px);
+}
+
+.section--wwd .content .right-panel .top-panel .develop-button {
+    transform: rotate(5deg) translateY(10px);
+}
+
+
+
+.section--wwd .content .visible .app-container:hover{
+    border: 2px solid #00ac6b;
+    border-radius: 10px;
+}
+
+
+.section--wwd .content .visible-left .app-container{
+    animation: Slide-in-left 1s ease forwards;
+}
+
+
+@keyframes Slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section--wwd .content .visible-right .app-container{
+    animation: Slide-in-right 1s ease forwards;
+}
+
+@keyframes Slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section--wwd .content .left-panel .top-panel,
+.section--wwd .content .left-panel .bottom-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.section--wwd .content .right-panel .top-panel,
+.section--wwd .content .right-panel .bottom-panel
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.section--wwd .content .center-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    z-index: -1;
+
+}
+
+.section--wwd .content .center-panel .radar-chart img {
+    max-width: 100%;
+    transform: scale(1.4);
+    height: auto;
+}
+
+

@@ -1,6 +1,6 @@
 import NavBar from '../components/navbar/navbar';
 import Landing from "../components/landing/landing";
-import TeamTechWWD from "../components/landing/TeamTechWWD/TeamTechWWD";
+
 
 function Main() {
     return (
