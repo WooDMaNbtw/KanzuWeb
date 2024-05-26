@@ -1,0 +1,92 @@
+.section--feedback {
+    padding: 20px;
+    background-image: url("../../../assets/timeline.svg");
+    height: 900px;
+}
+
+.section--feedback .naming {
+    display: flex;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.section--feedback .content {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section--feedback .timeline {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section--feedback .date {
+    display: flex;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background: #f9f9f9;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+}
+
+
+.time-line {
+    width: 99.2vw;
+    height: 5px;
+    background-color: #C1D4B2;
+    margin: -60px -20px;
+    box-sizing: border-box;
+    position: relative; /* Для позиционирования кружочков и дат */
+}
+
+.time-line .circle-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10px);
+    text-align: center; /* Центрирование текста под кружочком */
+}
+
+.time-line .circle {
+    opacity: 1;
+    width: 20px; /* Диаметр кружочков */
+    height: 20px;
+    background-color: #5CA040; /* Цвет кружочков */
+    border-radius: 50%; /* Закругляем до круга */
+    margin: 0 auto; /* Центрируем кружочек в контейнере */
+    transition: .5s ease all;
+
+}
+
+.time-line .circle-active {
+    transform: scale(1.5);
+    transition: .5s ease all;
+}
+
+.time-line .date-active {
+    font-weight: 700;
+    transition: .5s ease all;
+}
+
+.time-line .date {
+    background: transparent;
+    border: none;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 10px; /* Отступ сверху для надписи */
+    font-size: 16px; /* Размер шрифта для надписи */
+    color: #000; /* Цвет текста */
+}
