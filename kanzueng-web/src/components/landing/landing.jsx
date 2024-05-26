@@ -4,6 +4,7 @@ import LandingWhatWeDo from "./WhatWeDo/landingWWD";
 import LandingPortfolio from "./portfolio/landingPortfolio";
 import LandingContact from "./Contact/landingContact";
 import TeamTechWWD from "./TeamTechWWD/TeamTechWWD";
+import LandingFeedback from "./Feedback/landingFeedback";
 
 
 const Landing = () => {
@@ -13,6 +14,7 @@ const Landing = () => {
             <LandingWhatWeDo/>
             <TeamTechWWD/>
             <LandingPortfolio/>
+            <LandingFeedback/>
             <LandingContact/>
 
             {/*<section id="portfolio" className="section">*/}
@@ -28,18 +30,7 @@ const Landing = () => {
             {/*    </div>*/}
             {/*</section>*/}
 
-            {/*<section id="feedback" className="section">*/}
-            {/*    <div className="content">*/}
-            {/*        <div className="image-container">*/}
-            {/*            <img src={Kanzu} alt="Feedback"/>*/}
-            {/*            <div className="overlay">*/}
-            {/*                <h2>Feedback</h2>*/}
-            {/*                <p>Integer id ipsum nec libero tincidunt semper. Aliquam erat volutpat. Sed ac enim nec sem*/}
-            {/*                    consectetur viverra.</p>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
+
 
 
 
