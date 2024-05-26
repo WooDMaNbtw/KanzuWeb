@@ -42,7 +42,7 @@ const TimelineEvent = ({ tags, description, author, linkToProject, isVisible, sh
                 width: '25%'
             }}>
                 <div className='boxes' style={{
-                    height: '80%',
+                    height: '90%',
                     display: "flex",
                     width: '100%',
                     flexDirection: "column",

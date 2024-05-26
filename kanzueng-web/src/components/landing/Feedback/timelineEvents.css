@@ -35,13 +35,13 @@
 
 .section--feedback .tag {
     cursor: pointer;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #333333;
     color: #000;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin-right: 10px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     transition: .3s ease;
 }
@@ -74,16 +74,17 @@
 }
 
 .section--feedback .timeline-event .boxes a {
-    height: 25%;
-    margin-bottom: 30px;
+    height: 30%;
+    width: 120px;
+    margin-bottom: 20px;
 }
 
 .section--feedback .timeline-event .boxes button {
     border-radius: 8px;
     cursor: pointer;
     height: 120px;
-    width: 110px;
-    margin-bottom: 20px;
+    width: 120px;
+    /*margin-bottom: 20px;*/
     background-color: #ffffff;
     background-image: url("../../../assets/arrow-right-feedback.png");
     background-position: center; /* Центрируем фон */
@@ -99,10 +100,11 @@
 .section--feedback .view-project {
     display: flex;
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     background: #ECF5F2;
     color: black;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 500;
     text-decoration: none;
     text-align: center;
     align-items: center;

@@ -1,6 +1,9 @@
 .section--feedback {
     padding: 20px;
     background-image: url("../../../assets/timeline.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -270px;
     height: 900px;
 }
 
@@ -55,7 +58,7 @@
     flex-direction: column;
     position: absolute;
     top: 50%;
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     text-align: center; /* Центрирование текста под кружочком */
 }
 
@@ -63,16 +66,19 @@
     opacity: 1;
     width: 20px; /* Диаметр кружочков */
     height: 20px;
-    background-color: #5CA040; /* Цвет кружочков */
     border-radius: 50%; /* Закругляем до круга */
     margin: 0 auto; /* Центрируем кружочек в контейнере */
     transition: .5s ease all;
+    border: 2px solid #5CA040 ;
+    background: white;
+
 
 }
 
 .time-line .circle-active {
     transform: scale(1.5);
     transition: .5s ease all;
+    background: #5CA040;
 }
 
 .time-line .date-active {

@@ -3,7 +3,7 @@ import TimelineEvent from './timelineEvents';
 
 
 const Timeline = ({ feedbacks, currentEventIndex, showNextEvent, onMouseEnter, onMouseLeave }) => {
-    const widths = [8, 16, 17, 16.5, 20]
+    const widths = [0, 0, 9, 12, 19]
 
     return (
         <div className="content"
