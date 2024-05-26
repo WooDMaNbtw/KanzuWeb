@@ -84,11 +84,10 @@
     cursor: pointer;
     height: 120px;
     width: 120px;
-    /*margin-bottom: 20px;*/
     background-color: #ffffff;
     background-image: url("../../../assets/arrow-right-feedback.png");
-    background-position: center; /* Центрируем фон */
-    background-repeat: no-repeat; /* Убираем повторение фона */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
     transition: .5s ease;
 }

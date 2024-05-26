@@ -31,19 +31,19 @@
 }
 
 .section--wwd .content .left-panel .top-panel .develop-button {
-    transform: rotate(5deg) translateY(10px);
+    transform: rotate(2deg) translateY(10px);
 }
 
 .section--wwd .content .left-panel .bottom-panel .develop-button {
-    transform: rotate(-5deg) translateY(10px);
+    transform: rotate(-2deg) translateY(10px);
 }
 
 .section--wwd .content .right-panel .bottom-panel .develop-button {
-    transform: rotate(-5deg) translateY(10px);
+    transform: rotate(-2deg) translateY(10px);
 }
 
 .section--wwd .content .right-panel .top-panel .develop-button {
-    transform: rotate(5deg) translateY(10px);
+    transform: rotate(2deg) translateY(10px);
 }
 
 
