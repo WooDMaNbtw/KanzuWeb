@@ -17,7 +17,7 @@ const Timeline = ({ feedbacks, currentEventIndex, showNextEvent, onMouseEnter, o
                         tags={feedback.tags}
                         description={feedback.description}
                         author={feedback.author}
-                        linkToProject="https://google.com"
+                        linkToProject="#feedback"
                         isVisible={index === currentEventIndex}
                         showNextEvent={showNextEvent}
                         width={widths[currentEventIndex]}

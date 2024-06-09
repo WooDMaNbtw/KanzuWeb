@@ -62,7 +62,7 @@
     from {
         opacity: 0;
         color: white;
-        transform: translate(0%, -50%) translateY(-110px);
+        transform: translate(0%, -50%) translateX(-25px) translateY(-110px);
     }
     to {
         opacity: 1;
@@ -70,7 +70,7 @@
         background: linear-gradient(to bottom, white 40%, black 90%); /* Градиент от черного к белому */
         -webkit-background-clip: text; /* Применяем градиент к тексту */
         background-clip: text;
-        transform: translate(0, 0) translateY(-30px);
+        transform: translate(0, 0) translateX(-25px) translateY(-30px);
     }
 }
 
@@ -94,7 +94,7 @@
         background: linear-gradient(to bottom, white 0%, white 60%, black 80%); /* Градиент от черного к белому */
         -webkit-background-clip: text; /* Применяем градиент к тексту */
         background-clip: text;
-        transform: translate(0, 0) translateX(-50px) translateY(-110px);
+        transform: translate(0, 0) translateX(-60px) translateY(-110px);
     }
 }
 
@@ -216,7 +216,7 @@
         background: linear-gradient(to top, white 40%, black 80%); /* Градиент от черного к белому */
         -webkit-background-clip: text; /* Применяем градиент к тексту */
         background-clip: text;
-        transform: translate(0, 0) translateX(-210px) translateY(0px);
+        transform: translate(0, 0) translateX(-200px) translateY(0px);
     }
 }
 
