@@ -33,13 +33,12 @@
 
 .card {
     display: inline-block;
-    width: 80px; /* Ширина карточек по умолчанию */
+    width: 90px; /* Ширина карточек по умолчанию */
     height: 100%; /* Высота карточек по умолчанию */
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 7px;
+    margin-left: 7px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: solid 5px #000000;
     border-radius: 10px;
 }
 
@@ -48,24 +47,58 @@
     height: 500px;
 }
 
+.card .img-block .img-proj {
+    overflow: hidden;
+    border-radius: 5px;
+    height: 99.9%;
+}
+
 .card img {
-    width: 100%;
+    width: auto;
     height: 500px;
-    max-width: 100%;
+    /*max-width: 100%;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    /*transform: scale(1.2);*/
+    transform: translate(20%, 20%) scale(1.4);
 }
 
 .card.active {
-    width: 600px; /* Увеличиваем ширину активной карточки */
+    width: 550px; /* Увеличиваем ширину активной карточки */
     height: 100%; /* Увеличиваем высоту активной карточки */
 }
 
-.card.inactive img{
-    filter: blur(0.5px);
+.card.inactive img {
+    filter: blur(0.7px);
+    /*display: none;*/
+    width: auto;
+    height: 500px;
+    transition: 1s;
+}
+
+
+.card.inactive {
+    /*filter: blur(0.5px);*/
     /*display: none;*/
     height: 100%;
+    background: radial-gradient(ellipse, #60934B, #90e3c1, #F8F7F9);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    transition: .3s ease all;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /*.card.inactive {*/
 /*    background: #000000;*/
@@ -158,6 +191,7 @@
 .card.inactive .overlay-text,
 .card.half-active .overlay-text {
     display: none;
+
 }
 
 
@@ -176,6 +210,11 @@
     z-index: 1;
 }
 
+.card.active .overlay-text h3{
+    padding-inline: 5px;
+    font-size: 16px;
+}
+
 .card.active .img-block img {
     display: block;
 }
@@ -187,14 +226,16 @@
 .card.active .overlay-text h3 {
     display: flex;
     margin-right: 10px;
-    border: 2px solid white;
+    border: 1px solid black;
     border-radius: 10px;
     width: 100px;
     height: 40px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     background: transparent;
+    backdrop-filter: blur(3px);
 
     animation: fadeInUpTechs 1s ease forwards;
 }

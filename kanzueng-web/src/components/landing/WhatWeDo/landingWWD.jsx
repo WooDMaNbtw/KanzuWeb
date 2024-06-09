@@ -1,5 +1,5 @@
 import "./landingWWD.css"
-import radarChart from "../../../assets/img.png"
+import radarChart from "../../../assets/WWDcircle.png"
 import CardWWDComponentLeft from "./cards";
 import CardWWDComponentRight from "./cards";
 import {useEffect, useState} from "react";

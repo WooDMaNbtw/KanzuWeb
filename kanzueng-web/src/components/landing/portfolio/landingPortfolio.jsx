@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import f from '../../../assets/project1.png'
+import PaymentBot from '../../../assets/PaymenBot.png'
+import SteamApp from '../../../assets/SteamApp.jpg'
+import MontBot from '../../../assets/montenegro.jpeg'
+import ConsoleApp from '../../../assets/ConsoleMail.png'
+import OrderApp from '../../../assets/OrderApp.jpeg'
+import JobTrackBot from '../../../assets/JobFiBot.png'
 import "./landingPortfolio.css"
 import NavigationButton from "./navigationButton";
 
@@ -22,16 +27,12 @@ const LandingPortfolio = () => {
     };
 
     const projects = [
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'At Kanzu we develop job-perfect IT projects that meet both the needs and the eye. At Kanzu we develop job-perfect IT projects that meet both the needs and the eye', image: f, techno: ["JS", "CSS", "HTML", "REACT", "DJANGO"]},
-        // { type: "Type1", title: 'Project 8', description: 'Description 7', image: f, techno: ["sss", "sss", "sss"] }
+        { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'Our team developed a chat-bot in Telegram that helps to locate the user themselves on the map as well as to see upcoming busses. We\'ve experienced the lack of such service ourselves and came up with comfortable, simple yet elegant solution', image: MontBot, techno: ["telegram", "bot", "aiogram"]},
+        { type: "Automation", title: 'Steam accounts management automatization', description: 'We\'ve came up with account management automation for Steam. This allows to register, manage accounts and create maFile.', image: SteamApp, techno: ["opencv", "selenium", "asf"]},
+        { type: "Telegram chat-bot", title: 'Payment method selector bot', description: 'Our developers made a bot that allows to choose payment method: credit card, crypto currency, umoney.', image: PaymentBot, techno: ["telegram", "bot", "aiogram"]},
+        { type: "Console app", title: 'Email management console app', description: 'This app helps to add notes about emails, search emails by sender\'s name and price info. The program can load and store data as a text file, which grants the user a way to interact with the emails database.', image: ConsoleApp, techno: ["C#", "cmd", ".net"]},
+        { type: "Web application", title: 'Hotel management app ', description: 'Allows to book a hotel number. Easy and simple to use.', image: OrderApp, techno: ["Django", "ajax", "JQuery", "drf"]},
+        { type: "Telegram chat-bot", title: 'Finnish job search bot', description: 'It is an automated tool designed to comprehensively assist users in finding suitable vacancies and managing the entire job search process in Finland', image: JobTrackBot, techno: ["telegram", "aiogram", "SQL"]},
     ];
 
     const goToPreviousCard = () => {
@@ -56,7 +57,7 @@ const LandingPortfolio = () => {
                             onClick={goToPreviousCard}
                         />
                     </div>
-                    <div className="cards-container">
+                    <div className="cards-container" style={{width: "80%"}}>
                         {projects.map((project, index) => (
                             <div
                                 key={index}
@@ -71,11 +72,13 @@ const LandingPortfolio = () => {
                                             </h3>
                                         ))}
                                     </div>
-                                    <img src={project.image} alt={project.title}/>
+                                    <div className="img-proj">
+                                        <img src={project.image} alt={project.title}/>
+                                    </div>
                                     <div className="text">
                                         <div>
-                                            <h3>{project.type}</h3>
-                                            <h4>{project.title}</h4>
+                                            <h3>{project.title}</h3>
+                                            <h4>{project.type}</h4>
                                             <p>{project.description}</p>
                                         </div>
                                     </div>
