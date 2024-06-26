@@ -20,23 +20,24 @@ const LandingContact = () => {
                             <p>— Write us about your project, and we’ll solve your case efficiently. Want things done
                                 even faster? Start with filling in our brief-like form
                             </p>
-                            <p className="ceo-aftername">Alexander, CEO</p>
+                            <p className="ceo-aftername">Aleksandr, CEO</p>
                         </div>
                         <div className="contact-details">
                             <div>
-                                <p>email: <a href="mailto:ceo@kanzu.com">ceo@kanzu.com</a></p>
-                                <p>tg: <a href="https://t.me/SkyFyFamily" target="_blank">@SkyFyFamily</a></p>
+                                <p>email: <a href="mailto:hello@kanzu.fi">hello@kanzu.fi</a></p>
+                                {/*<p>tg: <a href="https://t.me/SkyFyFamily" target="_blank">@SkyFyFamily</a></p>*/}
+                                <hr/>
+                                <p><b>Contact numbers</b></p>
+                                <p>primary: 040 871 65 01</p>
+                                <p>second: 040 871 65 04</p>
 
                             </div>
                         </div>
                     </div>
                     <div className="buttons">
                         <div>
-                            <button className="brief-button" onClick={() => setShowPopup(true)}>
-                                contact us
-                            </button>
-                            {/*<button className="contact-button"*/}
-                            {/*        onClick={() => window.location.href = 'contact-us.html'}>contact us*/}
+                            {/*<button className="brief-button" onClick={() => setShowPopup(true)}>*/}
+                            {/*    contact us*/}
                             {/*</button>*/}
                         </div>
                     </div>
@@ -44,7 +45,7 @@ const LandingContact = () => {
             </div>
             <div className="footer">
                 <div>
-                    <div className="policy"><a href="#contact">Privacy policy</a></div>
+                    <div className="policy"><a href="#contact"></a></div>
                     <div className="year"><span>Kanzu | 2024</span></div>
                 </div>
             </div>
