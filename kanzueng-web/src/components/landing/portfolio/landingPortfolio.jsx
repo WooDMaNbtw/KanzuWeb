@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import PaymentBot from '../../../assets/PaymenBot.png'
-import SteamApp from '../../../assets/SteamApp.jpg'
-import MontBot from '../../../assets/montenegro.jpeg'
-import ConsoleApp from '../../../assets/ConsoleMail.png'
-import OrderApp from '../../../assets/OrderApp.jpeg'
+import PaymentBot from '../../../assets/portfolio/Telegram-bot-money.png'
+import SteamApp from '../../../assets/portfolio/portfolio-abstract-2.png'
+import MontBot from '../../../assets/portfolio/Telegram-Montenegro.png'
+import ConsoleApp from '../../../assets/portfolio/terminal.png'
+import OrderApp from '../../../assets/portfolio/order.png'
 import JobTrackBot from '../../../assets/JobFiBot.png'
 import "./landingPortfolio.css"
 import NavigationButton from "./navigationButton";
@@ -28,11 +28,11 @@ const LandingPortfolio = () => {
 
     const projects = [
         { type: "Telegram chat-bot", title: 'Montenegro Buses Timetable', description: 'Our team developed a chat-bot in Telegram that helps to locate the user themselves on the map as well as to see upcoming busses. We\'ve experienced the lack of such service ourselves and came up with comfortable, simple yet elegant solution', image: MontBot, techno: ["telegram", "bot", "aiogram"]},
-        { type: "Automation", title: 'Steam accounts management automatization', description: 'We\'ve came up with account management automation for Steam. This allows to register, manage accounts and create maFile.', image: SteamApp, techno: ["opencv", "selenium", "asf"]},
-        { type: "Telegram chat-bot", title: 'Payment method selector bot', description: 'Our developers made a bot that allows to choose payment method: credit card, crypto currency, umoney.', image: PaymentBot, techno: ["telegram", "bot", "aiogram"]},
-        { type: "Console app", title: 'Email management console app', description: 'This app helps to add notes about emails, search emails by sender\'s name and price info. The program can load and store data as a text file, which grants the user a way to interact with the emails database.', image: ConsoleApp, techno: ["C#", "cmd", ".net"]},
-        { type: "Web application", title: 'Hotel management app ', description: 'Allows to book a hotel number. Easy and simple to use.', image: OrderApp, techno: ["Django", "ajax", "JQuery", "drf"]},
         { type: "Telegram chat-bot", title: 'Finnish job search bot', description: 'It is an automated tool designed to comprehensively assist users in finding suitable vacancies and managing the entire job search process in Finland', image: JobTrackBot, techno: ["telegram", "aiogram", "SQL"]},
+        { type: "Telegram chat-bot", title: 'Payment selector bot', description: 'Our developers made a bot that allows to choose payment method: credit card, crypto currency, umoney.', image: PaymentBot, techno: ["telegram", "bot", "aiogram"]},
+        { type: "Web application", title: 'Online Fish Products Store', description: 'Simplified online form for selecting and purchasing fish products, offering fields for personal data and choices of fish type, size, and prep method, alongside delivery and payment options. Includes current promotions to enhance the shopping experience.', image: OrderApp, techno: ["Django", "ajax", "JQuery", "drf"]},
+        { type: "Console app", title: 'Email management console app', description: 'This app helps to add notes about emails, search emails by sender\'s name and price info. The program can load and store data as a text file, which grants the user a way to interact with the emails database.', image: ConsoleApp, techno: ["C#", "cmd", ".net"]},
+        { type: "Automation", title: 'Steam accounts management', description: 'We\'ve came up with account management automation for Steam. This allows to register, manage accounts and create maFile.', image: SteamApp, techno: ["opencv", "selenium", "asf"]},
     ];
 
     const goToPreviousCard = () => {

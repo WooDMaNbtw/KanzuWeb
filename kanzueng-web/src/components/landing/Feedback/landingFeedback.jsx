@@ -6,35 +6,29 @@ import Timeline from "./Feedback";
 const LandingFeedback = () => {
     const feedbacks = [
         {
-            tags: ['bot', 'telegram', 'js'],
-            description: "— Guys did an outstanding job of rearranging my website along with adding features I needed badly. Now we're also developing a chat-bot with them",
-            author: "Lauri Väinämö, CEO at Rasmus",
-            date: ['05/04/2024', '5.1%']
+            tags: ['creative', 'design', 'website'],
+            description: "— The work was done very quickly and we liked the result. Feedback was given promptly. All our wishes and comments, even those that arose during the work, were immediately taken into account by you.",
+            author: "Timmo, CEO at Kalewalakalastaja",
+            date: ['23/06/2024', '5.1%']
         },
         {
-            tags: ['website', 'redesign', 'frontend'],
-            description: "— I'm amazed at the quality of work and dedication they showed in redesigning our website. It's now more user-friendly and visually appealing. Highly recommended!",
-            author: "Anna Smith, Marketing Manager at ABC Corp",
-            date: ['21/03/2024', '12.8%']
+            tags: ['software', 'optimization', 'frontend'],
+            description: "— Kanzu's team made everything on time according to the technical docs. Helped with software installation. Sincerely recommend the company!",
+            author: "Sam, Product Manager",
+            date: ['06/06/2024', '12.8%']
         },
         {
             tags: ['app', 'development', 'mobile'],
-            description: "— Excellent job on developing our mobile app. The team's expertise in app development is truly impressive. Looking forward to future collaborations!",
-            author: "John Doe, CTO at XYZ Solutions",
-            date: ['18/01/2024', '28.2%']
+            description: "— Very precise work usability testing our product. Guys expert opinions brought valuable insights to our project. Thanks!",
+            author: "Irma, freelancer",
+            date: ['18/05/2024', '28.2%']
         },
         {
-            tags: ['backend', 'database', 'optimization'],
-            description: "— We needed optimization for our backend database, and they delivered beyond our expectations. Our system now runs smoother and faster. Great work!",
-            author: "Emily Brown, Lead Developer at DEF Inc",
-            date: ['09/12/2023', '43.5%']
+            tags: ['website', 'design', 'convenience'],
+            description: "— The team overseed our expectations by providing several options from which we've chosen what fitted us best. All the comments and suggestions were introduced to the interface in no time.",
+            author: "Tarja, PR manager",
+            date: ['28/04/2023', '43.5%']
         },
-        {
-            tags: ['design', 'ui/ux', 'creative'],
-            description: "— Kudos to the team for their creativity and attention to detail in designing our UI/UX. Our product now stands out in the market. Thank you!",
-            author: "Michael Johnson, Product Manager at GHI Technologies",
-            date: ['30/10/2023', '74.3%']
-        }
     ];
 
     const [isHovered, setIsHovered] = useState(false);

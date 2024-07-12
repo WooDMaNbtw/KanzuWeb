@@ -43,6 +43,16 @@
     justify-content: flex-end;
 }
 
+.contact .footer div .year .detail{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .footer div .year .detail span{
+    margin-top: 5px;
+}
+
 .contact .content h1 {
     font-size: 36px;
     margin-bottom: 20px;

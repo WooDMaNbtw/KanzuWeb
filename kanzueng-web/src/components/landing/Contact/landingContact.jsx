@@ -36,8 +36,8 @@ const LandingContact = () => {
                     </div>
                     <div className="buttons">
                         <div>
-                            {/*<button className="brief-button" onClick={() => setShowPopup(true)}>*/}
-                            {/*    contact us*/}
+                            {/*<button className="brief-button" onClick={() => setShowPopup(true)}>
+                            contact us*/}
                             {/*</button>*/}
                         </div>
                     </div>
@@ -46,7 +46,14 @@ const LandingContact = () => {
             <div className="footer">
                 <div>
                     <div className="policy"><a href="#contact"></a></div>
-                    <div className="year"><span>Kanzu | 2024</span></div>
+                    <div className="year">
+                        <div className="detail">
+                            <span>Kanzu | 2024</span>
+                            <span>IT Family Oy</span>
+                            <span>Y-tunnus: 3376231-9</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
