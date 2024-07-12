@@ -20,7 +20,7 @@ const LandingWhatWeDo = () => {
                     return panels[nextIndex];
                 });
             }
-        }, 5000);
+        }, 3500);
 
         return () => clearInterval(interval);
     }, [isHovered]);
@@ -48,11 +48,11 @@ const LandingWhatWeDo = () => {
                     onMouseLeave={handleMouseLeave}
                 >
                     <div className="top-panel">
-                        <h2 style={getH2Style('left-top')}>chat-bot development</h2>
+                        <h2 style={getH2Style('left-top')}>chat-bot Development</h2>
                         {isCardVisible('left-top') && (
                             <CardWWDComponentLeft
                                 flex={"flex-end"}
-                                tags={['bot', 'telegram', 'js']}
+                                tags={['Bot', 'Telegram', 'JS']}
                                 descText={"We’re pro experts at developing chat-bots for your business. Automize processes and make your customer service next level with chat-bots"}
                                 buttonText={"develop chat-bot"}
                             />
@@ -62,12 +62,12 @@ const LandingWhatWeDo = () => {
                         {isCardVisible('left-bottom') && (
                             <CardWWDComponentLeft
                                 flex="flex-end"
-                                tags={['bot', 'telegram', 'js']}
-                                descText={"We’re pro experts at developing chat-bots for your business. Automize processes and make your customer service next level with chat-bots"}
-                                buttonText={"develop chat-bot"}
+                                tags={['React Native', 'Flutter']}
+                                descText={"We develop both native and cross-platform apps to fit your business needs whether it is a tiny entry form or an immense product. "}
+                                buttonText={"build an app"}
                             />
                         )}
-                        <h2 style={getH2Style('left-bottom')}>System administration</h2>
+                        <h2 style={getH2Style('left-bottom')}>Mobile Development</h2>
                     </div>
                 </div>
                 <div className="center-panel">
@@ -81,12 +81,12 @@ const LandingWhatWeDo = () => {
                     onMouseLeave={handleMouseLeave}
                 >
                     <div className="top-panel">
-                        <h2 style={getH2Style('right-top')}>Websites & web projects</h2>
+                        <h2 style={getH2Style('right-top')}>Websites & Web Services</h2>
                         {isCardVisible('right-top') && (
                             <CardWWDComponentRight
                                 flex="flex-start"
-                                tags={['bot', 'telegram', 'js']}
-                                descText={"We’re pro experts at developing chat-bots for your business. Automize processes and make your customer service next level with chat-bots"}
+                                tags={['Django', 'React', 'API']}
+                                descText={"At Kanzu we're proficient in developing custom web apps as well as websites that create smooth experiences and use flawless technologies."}
                                 buttonText={"develop chat-bot"}
                             />
                         )}
@@ -95,12 +95,12 @@ const LandingWhatWeDo = () => {
                         {isCardVisible('right-bottom') && (
                             <CardWWDComponentRight
                                 flex="flex-start"
-                                tags={['bot', 'telegram', 'js']}
-                                descText={"We’re pro experts at developing chat-bots for your business. Automize processes and make your customer service next level with chat-bots"}
-                                buttonText={"develop chat-bot"}
+                                tags={['Unix', 'Windows', 'DBA']}
+                                descText={"Our experts are skilled in creating, fine-tuning and maintaining software and computer systems. Complexity is handled with precision and attention."}
+                                buttonText={"develop admin systems"}
                             />
                         )}
-                        <h2 style={getH2Style('right-bottom')}>Mobile development</h2>
+                        <h2 style={getH2Style('right-bottom')}>System Administration</h2>
                     </div>
                 </div>
             </div>
