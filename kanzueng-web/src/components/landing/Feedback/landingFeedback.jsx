@@ -19,7 +19,7 @@ const LandingFeedback = () => {
         },
         {
             tags: ['app', 'development', 'mobile'],
-            description: "— Very precise work usability testing our product. Guys expert opinions brought valuable insights to our project. Thanks!",
+            description: "— Very precise work usability testing our product. Guys expert opinions brought valuable insights to our project. Thanks for everything!",
             author: "Irma, freelancer",
             date: ['18/05/2024', '28.2%']
         },

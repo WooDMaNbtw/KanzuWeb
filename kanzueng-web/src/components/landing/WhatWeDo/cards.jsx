@@ -13,7 +13,7 @@ const CardWWDComponent = ({ tags, descText, buttonText, flex }) => {
                 <p>{descText}</p>
             </div>
             <div className="button-container">
-                <button className="develop-button">{buttonText}</button>
+                <a href="#contact"><button className="develop-button">{buttonText}</button></a>
             </div>
         </div>
     );
